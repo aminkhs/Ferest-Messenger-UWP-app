@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Ferest_Messenger.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ferest_Messenger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Storyboard x:ConnectionId='9' x:Name="MoveFirstelement">
+                    <RepositionThemeAnimation Storyboard.TargetName="FirstShortcut"
+                                              FromHorizontalOffset="100"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='10' x:Name="MoveSecondelement">
+                    <RepositionThemeAnimation Storyboard.TargetName="SecondShortcut"
+                                              FromHorizontalOffset="100"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='11' x:Name="MoveThirdelement">
+                    <RepositionThemeAnimation Storyboard.TargetName="ThirdShortcut"
+                                              FromHorizontalOffset="100"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='12' x:Name="MoveHolderelement">
+                    <RepositionThemeAnimation Storyboard.TargetName="ShortCutHolder"
+                                              FromHorizontalOffset="100"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='13' x:Name="HideHolderelement">
+                    <RepositionThemeAnimation Storyboard.TargetName="ShortCutHolder"
+                                              FromHorizontalOffset="0"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+            </StackPanel.Resources>
+        </StackPanel>
+        <Grid x:ConnectionId='1' x:Name="Menu">
+            <Rectangle Fill="#FF1B816C" Height="64" VerticalAlignment="Top"/>
+            <Image x:ConnectionId='8' x:Name="BurgerMenu" HorizontalAlignment="Left" Height="54" Margin="6,6,0,0" VerticalAlignment="Top" Width="52" Source="Assets/Burgermenu.png"/>
+        </Grid>
+
+        <Grid x:ConnectionId='2' x:Name="ShortcutVisible">
+            <Ellipse x:ConnectionId='4' x:Name="ShortCutHolder" Fill="#FF1B816C" Height="267" Margin="0,184,-132,0" VerticalAlignment="Top" Opacity="0.5" HorizontalAlignment="Right" Width="267"/>
+            <Image x:ConnectionId='5' x:Name="FirstShortcut" Source="Assets/Contacts.png" Margin="0,192,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
+            <Image x:ConnectionId='6' x:Name="SecondShortcut" Source="Assets/NewMessage.png" Margin="0,288,67,0" HorizontalAlignment="Right" Width="61" Height="64" VerticalAlignment="Top" />
+            <Image x:ConnectionId='7' x:Name="ThirdShortcut" Source="Assets/Friends.png" Margin="0,371,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
+        </Grid>
+        <Image x:ConnectionId='3' x:Name="ShortcutCollapsed" Height="106" Margin="0,269,-89,0" VerticalAlignment="Top" Source="Assets/Shrotcutc.png" HorizontalAlignment="Right" Width="112"                                                                                                  />
+    </Grid>
+</Page>
+
