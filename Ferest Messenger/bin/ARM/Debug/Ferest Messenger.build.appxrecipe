@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>AMIN</Machine>
+    <Machine>DESKTOP-709QG4C</Machine>
     <WindowsUser>Amin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -342,6 +342,9 @@
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Attach.png">
+      <PackagePath>Assets\Attach.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Back.png">
       <PackagePath>Assets\Back.png</PackagePath>
     </AppxPackagedFile>
@@ -357,8 +360,38 @@
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\NewMessage.png">
       <PackagePath>Assets\NewMessage.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Send.png">
+      <PackagePath>Assets\Send.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Shrotcutc.png">
       <PackagePath>Assets\Shrotcutc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Voice.png">
+      <PackagePath>Assets\Voice.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -389,6 +422,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Bg.jpg">
       <PackagePath>Assets\Bg.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Assets\Frest Messenger Logo.jpg">
+      <PackagePath>Assets\Frest Messenger Logo.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Amin\OneDrive\RAYA SOFT\App\Universal app\Ferest Messenger\Ferest Messenger\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

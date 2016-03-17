@@ -31,6 +31,9 @@
                         <Setter Target="Messagetxt.FontSize" Value="14"/>
                         <Setter Target="Messagetxt.Margin" Value="22,115,0,480"/>
                         <Setter Target="MessageMenu.Margin" Value="0,0,0,0"/>
+                        <Setter Target="ContactPopupHolder.Margin" Value="10,146,14,0"/>
+                        <Setter Target="ContactImage.Margin" Value="45,171,0,0"/>
+                        <Setter Target="ContactNameTextblk.Margin" Value="111,177,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='2' x:Name="Compact">
@@ -40,6 +43,9 @@
                     <VisualState.Setters>
                         <Setter Target="seters.Width" Value="10"/>
                         <Setter Target="Message.MinWidth" Value="480"/>
+                        <Setter Target="ContactPopupHolder.Margin" Value="10,146,14,0"/>
+                        <Setter Target="ContactImage.Margin" Value="35,171,0,0"/>
+                        <Setter Target="ContactNameTextblk.Margin" Value="101,177,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='3' x:Name="Wide">
@@ -50,6 +56,10 @@
                         <Setter Target="seters.Width" Value="50"/>
                         <Setter Target="Message.Width" Value="480"/>
                         <Setter Target="MessageMenu.Margin" Value="380,0,0,0"/>
+                        <Setter Target="ContactPopupHolder.Height" Value="500"/>
+                        <Setter Target="ContactPopupHolder.Margin" Value="10,146,14,0"/>
+                        <Setter Target="ContactImage.Margin" Value="195,171,0,0"/>
+                        <Setter Target="ContactNameTextblk.Margin" Value="261,177,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='4' x:Name="UWide">
@@ -60,6 +70,12 @@
                         <Setter Target="seters.Width" Value="80"/>
                         <Setter Target="Message.Width" Value="480"/>
                         <Setter Target="MessageMenu.Margin" Value="380,0,0,0"/>
+                        <Setter Target="ContactPopupHolder.Height" Value="500"/>
+                        <Setter Target="ContactPopupHolder.Margin" Value="10,146,14,0"/>
+                        <Setter Target="ContactImage.Margin" Value="195,171,0,0"/>
+                        <Setter Target="ContactImage.Width" Value="200"/>
+                        <Setter Target="ContactImage.Height" Value="200"/>
+                        <Setter Target="ContactNameTextblk.Margin" Value="261,177,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -67,111 +83,170 @@
         </VisualStateManager.VisualStateGroups>
         <StackPanel>
             <StackPanel.Resources>
-                <Storyboard x:ConnectionId='33' x:Name="MoveFirstelement">
+                <Storyboard x:ConnectionId='49' x:Name="MoveFirstelement">
                     <RepositionThemeAnimation Storyboard.TargetName="FirstShortcut"
                                               FromHorizontalOffset="100"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='34' x:Name="MoveSecondelement">
+                <Storyboard x:ConnectionId='50' x:Name="MoveSecondelement">
                     <RepositionThemeAnimation Storyboard.TargetName="SecondShortcut"
                                               FromHorizontalOffset="100"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='35' x:Name="MoveThirdelement">
+                <Storyboard x:ConnectionId='51' x:Name="MoveThirdelement">
                     <RepositionThemeAnimation Storyboard.TargetName="ThirdShortcut"
                                               FromHorizontalOffset="100"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='36' x:Name="MoveHolderelement">
+                <Storyboard x:ConnectionId='52' x:Name="MoveHolderelement">
                     <RepositionThemeAnimation Storyboard.TargetName="ShortCutHolder"
                                               FromHorizontalOffset="100"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='37' x:Name="HideHolderelement">
+                <Storyboard x:ConnectionId='53' x:Name="HideHolderelement">
                     <RepositionThemeAnimation Storyboard.TargetName="ShortCutHolder"
                                               FromHorizontalOffset="0"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='38' x:Name="FloatSelect1">
+                <Storyboard x:ConnectionId='54' x:Name="FloatSelect1">
                     <RepositionThemeAnimation Storyboard.TargetName="MenuSelect"
                                               FromHorizontalOffset="50"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='39' x:Name="FloatSelect2">
+                <Storyboard x:ConnectionId='55' x:Name="FloatSelect2">
                     <RepositionThemeAnimation Storyboard.TargetName="MenuSelect"
                                               FromHorizontalOffset="-50"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='40' x:Name="HideMenu">
+                <Storyboard x:ConnectionId='56' x:Name="HideMenu">
                     <RepositionThemeAnimation Storyboard.TargetName="MainMenu"
                                               FromHorizontalOffset="0"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='41' x:Name="ShowMenu">
+                <Storyboard x:ConnectionId='57' x:Name="ShowMenu">
                     <RepositionThemeAnimation Storyboard.TargetName="MainMenu"
                                               FromHorizontalOffset="400"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='42' x:Name="HideMessageMenu">
+                <Storyboard x:ConnectionId='58' x:Name="HideMessageMenu">
                     <RepositionThemeAnimation Storyboard.TargetName="MessageMenu"
                                               FromHorizontalOffset="0"
                                               AutoReverse="False"/>
                 </Storyboard>
 
-                <Storyboard x:ConnectionId='43' x:Name="ShowMessageMenu">
+                <Storyboard x:ConnectionId='59' x:Name="ShowMessageMenu">
                     <RepositionThemeAnimation Storyboard.TargetName="MessageMenu"
                                               FromHorizontalOffset="400"
                                               AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='60' x:Name="MoveUpmsg">
+                    <RepositionThemeAnimation Storyboard.TargetName="MSGHolder2Contents"
+                                              FromVerticalOffset="40"
+                                              AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='61' x:Name="BackBlackPopShow">
+                    <DoubleAnimation Storyboard.TargetName="BackPopUpTransblack"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="0.3"
+                                     Duration="00:00:00.3"
+                                     AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='62' x:Name="BackBlackPopHide">
+                    <DoubleAnimation Storyboard.TargetName="BackPopUpTransblack"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0.3" To="0"
+                                     Duration="00:00:00.2"
+                                     AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='63' x:Name="ContactDetailsPopShow">
+                    <DoubleAnimation Storyboard.TargetName="ContactDetailsGrid"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0" To="1"
+                                     Duration="00:00:00.3"
+                                     AutoReverse="False"/>
+                </Storyboard>
+
+                <Storyboard x:ConnectionId='64' x:Name="ContactDetailsPopHide">
+                    <DoubleAnimation Storyboard.TargetName="ContactDetailsGrid"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="1" To="0"
+                                     Duration="00:00:00.2"
+                                     AutoReverse="False"/>
                 </Storyboard>
 
             </StackPanel.Resources>
         </StackPanel>
         <Grid x:ConnectionId='5' x:Name="MainMenu">
-            <Grid x:ConnectionId='11' x:Name="Messages" Height="640" VerticalAlignment="Top">
-                <Rectangle x:ConnectionId='29' x:Name="Message"                         Height="100" Fill="White" Margin="-5,81,-12,459" Stroke="#FFCBCBCB" HorizontalAlignment="Left" Width="377"/>
-                <TextBlock x:ConnectionId='30' x:Name="Messagecontacttxt"                         Text="Ferest Messenger" Width="200" Height="35" FontSize="24" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF25A283" Margin="22,89,0,516" HorizontalAlignment="Left"/>
-                <TextBlock x:ConnectionId='31' x:Name="Messagetxt"                         Text="Hey there! welcome to Ferest messenger!" Width="328" Height="35" FontSize="16" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF5B5B5B" Margin="22,125,0,480" HorizontalAlignment="Left"/>
-                <Rectangle x:ConnectionId='32' x:Name="seters" Width="10" Height="10" Visibility="Collapsed"/>
+            <Grid x:ConnectionId='27' x:Name="Messages" Height="640" VerticalAlignment="Top">
+                <Rectangle x:ConnectionId='45' x:Name="Message"                         Height="100" Fill="White" Margin="-5,81,-12,459" Stroke="#FFCBCBCB" HorizontalAlignment="Left" Width="377"/>
+                <TextBlock x:ConnectionId='46' x:Name="Messagecontacttxt"                         Text="Ferest Messenger" Width="200" Height="35" FontSize="24" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF25A283" Margin="22,89,0,516" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='47' x:Name="Messagetxt"                         Text="Hey there! welcome to Ferest messenger!" Width="328" Height="35" FontSize="16" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF5B5B5B" Margin="22,125,0,480" HorizontalAlignment="Left"/>
+                <Rectangle x:ConnectionId='48' x:Name="seters" Width="10" Height="10" Visibility="Collapsed"/>
             </Grid>
 
-            <Grid x:ConnectionId='12' x:Name="Contacts">
-                <Rectangle x:ConnectionId='26' x:Name="SearchContacts"                                Fill="#FF25A283" Width="92" Height="30" Margin="123,89,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock x:ConnectionId='27' x:Name="SearchContactstxtblk"                                Text="Search" Width="69" FontSize="14" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" Margin="146,97,0,0" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
-                <ListView x:ConnectionId='28' x:Name="ContactsList" HorizontalAlignment="Left" Height="254" Margin="72,235,0,0" VerticalAlignment="Top" Width="208" Foreground="Black" Background="Red" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+            <Grid x:ConnectionId='28' x:Name="Contacts">
+                <Rectangle x:ConnectionId='42' x:Name="SearchContacts"                                Fill="#FF25A283" Width="92" Height="30" Margin="123,89,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:ConnectionId='43' x:Name="SearchContactstxtblk"                                Text="Search" Width="69" FontSize="14" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" Margin="146,97,0,0" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
+                <ListView x:ConnectionId='44' x:Name="ContactsList" HorizontalAlignment="Left" Height="254" Margin="10,236,0,0" VerticalAlignment="Top" Width="208" Foreground="Black" Background="Red" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
 
             </Grid>
 
-            <Grid x:ConnectionId='13' x:Name="Menu" Height="84" VerticalAlignment="Top">
-                <Rectangle x:ConnectionId='20' x:Name="Background" Fill="White"/>
-                <Rectangle x:ConnectionId='21' x:Name="Topmenu" Fill="#25a283" Height="84" VerticalAlignment="Top"/>
-                <TextBlock x:ConnectionId='22' x:Name="Menu1txtblk"                             FontSize="20" Text="Messages" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="16,48,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="86" />
-                <TextBlock x:ConnectionId='23' x:Name="Menu2txtblk"                             FontSize="20" Text="Contacts" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="136,48,0,0" Height="30" VerticalAlignment="Top"                                                 HorizontalAlignment="Left" Width="86" />
-                <TextBlock x:ConnectionId='24' x:Name="Menu3txtblk"                             FontSize="20" Text="My Posts" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="265,48,0,0" Height="30" VerticalAlignment="Top"                                                 HorizontalAlignment="Left" Width="86" />
-                <Rectangle x:ConnectionId='25' x:Name="MenuSelect" Fill="White" Width="60" Height="6" Margin="144,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Grid x:ConnectionId='29' x:Name="Menu" Height="84" VerticalAlignment="Top">
+                <Rectangle x:ConnectionId='36' x:Name="Background" Fill="White"/>
+                <Rectangle x:ConnectionId='37' x:Name="Topmenu" Fill="#25a283" Height="84" VerticalAlignment="Top"/>
+                <TextBlock x:ConnectionId='38' x:Name="Menu1txtblk"                             FontSize="20" Text="Messages" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="16,48,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="86" />
+                <TextBlock x:ConnectionId='39' x:Name="Menu2txtblk"                             FontSize="20" Text="Contacts" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="136,48,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="86" />
+                <TextBlock x:ConnectionId='40' x:Name="Menu3txtblk"                             FontSize="20" Text="My Posts" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="265,48,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="86" />
+                <Rectangle x:ConnectionId='41' x:Name="MenuSelect" Fill="White" Width="60" Height="6" Margin="144,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             </Grid>
 
-            <Grid x:ConnectionId='14' x:Name="ShortcutVisible">
-                <Ellipse x:ConnectionId='16' x:Name="ShortCutHolder" Fill="#FF1B816C" Height="267" Margin="0,184,-132,0" VerticalAlignment="Top" Opacity="0.5" HorizontalAlignment="Right" Width="267"/>
-                <Image x:ConnectionId='17' x:Name="FirstShortcut" Source="Assets/Contacts.png" Margin="0,192,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
-                <Image x:ConnectionId='18' x:Name="SecondShortcut" Source="Assets/NewMessage.png" Margin="0,288,67,0" HorizontalAlignment="Right" Width="61" Height="64" VerticalAlignment="Top" />
-                <Image x:ConnectionId='19' x:Name="ThirdShortcut" Source="Assets/Friends.png" Margin="0,365,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
+            <Grid x:ConnectionId='30' x:Name="ShortcutVisible">
+                <Ellipse x:ConnectionId='32' x:Name="ShortCutHolder" Fill="#FF1B816C" Height="267" Margin="0,184,-132,0" VerticalAlignment="Top" Opacity="0.5" HorizontalAlignment="Right" Width="267"/>
+                <Image x:ConnectionId='33' x:Name="FirstShortcut" Source="Assets/Contacts.png" Margin="0,192,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
+                <Image x:ConnectionId='34' x:Name="SecondShortcut" Source="Assets/NewMessage.png" Margin="0,288,67,0" HorizontalAlignment="Right" Width="61" Height="64" VerticalAlignment="Top" />
+                <Image x:ConnectionId='35' x:Name="ThirdShortcut" Source="Assets/Friends.png" Margin="0,365,0,0" HorizontalAlignment="Right" Width="71" Height="73" VerticalAlignment="Top" />
             </Grid>
-            <Image x:ConnectionId='15' x:Name="ShortcutCollapsed" Height="106" Margin="0,269,-89,0" VerticalAlignment="Top" Source="Assets/Shrotcutc.png" HorizontalAlignment="Right" Width="112"                                                                                                  />
+            <Image x:ConnectionId='31' x:Name="ShortcutCollapsed" Height="106" Margin="0,269,-89,0" VerticalAlignment="Top" Source="Assets/Shrotcutc.png" HorizontalAlignment="Right" Width="112"                                                                                                  />
         </Grid>
-        <Grid x:ConnectionId='6' x:Name="MessageMenu" Visibility="Collapsed">
-            <Image x:ConnectionId='7' x:Name="BGMessage" Source="Assets/Bg.jpg" Stretch="UniformToFill"/>
-            <Rectangle x:ConnectionId='8' x:Name="TopMessage" Fill="#25a283" Height="84" VerticalAlignment="Top"/>
-            <TextBlock x:ConnectionId='9' x:Name="ContactNametxtblk" FontSize="20" Text="Ferest Messenger" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="65,34,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="151" />
-            <Image x:ConnectionId='10' x:Name="Backbtn"                         Source="Assets/Back.png" Margin="10,30,0,0" HorizontalAlignment="Left" Width="50" Height="34" VerticalAlignment="Top"/>
+        <Grid x:ConnectionId='6' x:Name="MessageMenu" >
+            <Image x:ConnectionId='12' x:Name="BGMessage" Source="Assets/Bg.jpg" Stretch="UniformToFill"/>
+            <Rectangle x:ConnectionId='13' x:Name="TopMessage" Fill="#25a283" Height="84" VerticalAlignment="Top"/>
+            <TextBlock x:ConnectionId='14' x:Name="ContactNametxtblk" FontSize="20" Text="Ferest Messenger" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="White" SelectionHighlightColor="{x:Null}" Margin="65,34,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="243" />
+            <Image x:ConnectionId='15' x:Name="Backbtn"                          Source="Assets/Back.png" Margin="10,30,0,0" HorizontalAlignment="Left" Width="50" Height="34" VerticalAlignment="Top"                                                                          />
+            <Rectangle Fill="#FFDADADA" Height="57" VerticalAlignment="Bottom"/>
+            <TextBox x:ConnectionId='16' x:Name="MessagetxtBox" Height="30" Margin="53,0,52,10" BorderBrush="White" Background="White" VerticalAlignment="Bottom"/>
+            <Image x:ConnectionId='17' x:Name="Attachbtn" Source="Assets/Attach.png" Width="35" Height="30" Margin="11,0,0,11" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+            <Image x:ConnectionId='18' x:Name="Sendbtn" Source="Assets/Send.png" Width="35" Height="30" Margin="0,0,9,11" HorizontalAlignment="Right" VerticalAlignment="Bottom"                         />
+
+            <Grid x:ConnectionId='19' x:Name="MSGHolder1Contents" Margin="0,0,0,82" Width="209" Height="63" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <Rectangle x:ConnectionId='24' x:Name="MessageHolder1" Fill="#FFACDACF" Height="38" VerticalAlignment="Bottom" Margin="11,0,0,15" HorizontalAlignment="Left" Width="144" RadiusX="5" RadiusY="5" Stroke="#FF25A283" StrokeThickness="0.5"/>
+                <TextBlock x:ConnectionId='25' x:Name="MSG1" Text="Hello msg" IsTextSelectionEnabled="True" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF33403D" FontSize="14" Height="25" Margin="26,0,-141,18" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="324"/>
+                <TextBlock x:ConnectionId='26' x:Name="MSGTime1" Text="12:00" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#FF7E7E7E" FontSize="8" Height="9" Margin="122,0,0,14" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="29"/>
+            </Grid>
+            <Grid x:ConnectionId='20' x:Name="MSGHolder2Contents" Margin="0,0,0,82" Height="63" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="209">
+                <Rectangle x:ConnectionId='21' x:Name="MessageHolder2" Fill="#FF25A283" Height="38" VerticalAlignment="Bottom" Margin="0,0,14,15" RadiusX="5" RadiusY="5" Stroke="White" StrokeThickness="0.5" HorizontalAlignment="Right" Width="144"/>
+                <TextBlock x:ConnectionId='22' x:Name="MSG2" Text="Hello msg" IsTextSelectionEnabled="True" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#fff" FontSize="14" Height="25" Margin="0,0,-8,19" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150"/>
+                <TextBlock x:ConnectionId='23' x:Name="MSGTime2" Text="12:00" FontFamily="Assets/Fonts/SourceSansPro.ttf#Source Sans Pro" Foreground="#fff" FontSize="8" Height="9" Margin="0,0,14,18" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="29"/>
+            </Grid>
+        </Grid>
+        <Rectangle x:ConnectionId='7' x:Name="BackPopUpTransblack"                                     Fill="Black" Opacity="0" Visibility="Collapsed"/>
+        <Grid x:ConnectionId='8' x:Name="ContactDetailsGrid">
+            <Rectangle x:ConnectionId='9' x:Name="ContactPopupHolder" MinHeight="300" MaxHeight="500" MaxWidth="650" Fill="#Fff" Margin="10,146,14,0" RadiusX="5" RadiusY="5" Stroke="#2d2d2d" StrokeThickness="1.0" Height="300" VerticalAlignment="Top"/>
+            <Image x:ConnectionId='10' x:Name="ContactImage"                                                                                     MaxHeight="100"  MaxWidth="100" Margin="35,171,0,0" Source="Assets/Frest Messenger Logo.jpg" Stretch="UniformToFill" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50"/>
+            <TextBlock x:ConnectionId='11' x:Name="ContactNameTextblk" IsTextSelectionEnabled="True" Text="Ferest Messenger" FontSize="18" Foreground="#2d2d2d" MaxHeight="50" MaxWidth="200" Margin="101,177,0,0" HorizontalAlignment="Left" Width="150" Height="30" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>

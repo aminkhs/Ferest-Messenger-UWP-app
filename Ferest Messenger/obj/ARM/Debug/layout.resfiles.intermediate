@@ -1,18 +1,28 @@
 WinMetadata\Windows.winmd
 ApplicationInsights.config
+Assets\Attach.png
 Assets\Back.png
 Assets\Bg.jpg
 Assets\Burgermenu.png
 Assets\Contacts.png
+Assets\Frest Messenger Logo.jpg
 Assets\Friends.png
 Assets\LockScreenLogo.scale-200.png
 Assets\NewMessage.png
+Assets\Send.png
 Assets\Shrotcutc.png
 Assets\SplashScreen.scale-200.png
+Assets\Square150x150Logo.scale-100.png
 Assets\Square150x150Logo.scale-200.png
+Assets\Square150x150Logo.scale-400.png
+Assets\Square310x310Logo.scale-100.png
 Assets\Square44x44Logo.scale-200.png
 Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Assets\Square71x71Logo.scale-100.png
+Assets\Square71x71Logo.scale-200.png
+Assets\Square71x71Logo.scale-400.png
 Assets\StoreLogo.png
+Assets\Voice.png
 Assets\Wide310x150Logo.scale-200.png
 Ferest Messenger.xr.xml
 Properties\Default.rd.xml
